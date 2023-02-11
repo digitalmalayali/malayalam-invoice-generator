@@ -2,11 +2,9 @@ import React, { FC, useState, useEffect } from 'react'
 import { Invoice, ProductLine } from '../data/types'
 import { initialInvoice, initialProductLine } from '../data/initialData'
 import EditableInput from './EditableInput'
-import EditableSelect from './EditableSelect'
 import EditableTextarea from './EditableTextarea'
 import EditableCalendarInput from './EditableCalendarInput'
 import EditableFileImage from './EditableFileImage'
-import countryList from '../data/countryList'
 import Document from './Document'
 import Page from './Page'
 import View from './View'
@@ -16,10 +14,10 @@ import Download from './DownloadPDF'
 import format from 'date-fns/format'
 
 Font.register({
-  family: 'Nunito',
+  family: 'Manjari',
   fonts: [
-    { src: 'https://fonts.gstatic.com/s/nunito/v12/XRXV3I6Li01BKofINeaE.ttf' },
-    { src: 'https://fonts.gstatic.com/s/nunito/v12/XRXW3I6Li01BKofA6sKUYevN.ttf', fontWeight: 600 },
+    { src: 'https://smc.org.in/downloads/fonts/manjari/Manjari-Regular.ttf' },
+    { src: 'https://smc.org.in/downloads/fonts/manjari/Manjari-Bold.ttf', fontWeight: 600 },
   ],
 })
 
@@ -145,7 +143,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
           <View className="w-50" pdfMode={pdfMode}>
             <EditableFileImage
               className="logo"
-              placeholder="Your Logo"
+              placeholder="ലോഗോ"
               value={invoice.logo}
               width={invoice.logoWidth}
               pdfMode={pdfMode}
@@ -154,31 +152,31 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
             />
             <EditableInput
               className="fs-20 bold"
-              placeholder="Your Company"
+              placeholder="കമ്പനി/സ്ഥാപനം"
               value={invoice.companyName}
               onChange={(value) => handleChange('companyName', value)}
               pdfMode={pdfMode}
             />
             <EditableInput
-              placeholder="Your Name"
+              placeholder="നിങ്ങളുടെ പേര്"
               value={invoice.name}
               onChange={(value) => handleChange('name', value)}
               pdfMode={pdfMode}
             />
             <EditableInput
-              placeholder="Company's Address"
+              placeholder="കമ്പനിയുടെ വിലാസം"
               value={invoice.companyAddress}
               onChange={(value) => handleChange('companyAddress', value)}
               pdfMode={pdfMode}
             />
             <EditableInput
-              placeholder="City, State Zip"
+              placeholder="സ്ഥലം, പിൻകോഡ്"
               value={invoice.companyAddress2}
               onChange={(value) => handleChange('companyAddress2', value)}
               pdfMode={pdfMode}
             />
-            <EditableSelect
-              options={countryList}
+            <EditableInput
+              placeholder="ഇന്ത്യ"
               value={invoice.companyCountry}
               onChange={(value) => handleChange('companyCountry', value)}
               pdfMode={pdfMode}
@@ -187,7 +185,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
           <View className="w-50" pdfMode={pdfMode}>
             <EditableInput
               className="fs-45 right bold"
-              placeholder="Invoice"
+              placeholder="ബിൽ"
               value={invoice.title}
               onChange={(value) => handleChange('title', value)}
               pdfMode={pdfMode}
@@ -204,25 +202,25 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
               pdfMode={pdfMode}
             />
             <EditableInput
-              placeholder="Your Client's Name"
+              placeholder="ഉപഭോക്താവിന്റെ പേര്"
               value={invoice.clientName}
               onChange={(value) => handleChange('clientName', value)}
               pdfMode={pdfMode}
             />
             <EditableInput
-              placeholder="Client's Address"
+              placeholder="ഉപഭോക്താവിന്റെ വിലാസം"
               value={invoice.clientAddress}
               onChange={(value) => handleChange('clientAddress', value)}
               pdfMode={pdfMode}
             />
             <EditableInput
-              placeholder="City, State Zip"
+              placeholder="സ്ഥലം, പിൻകോഡ്"
               value={invoice.clientAddress2}
               onChange={(value) => handleChange('clientAddress2', value)}
               pdfMode={pdfMode}
             />
-            <EditableSelect
-              options={countryList}
+            <EditableInput
+              placeholder="ഇന്ത്യ"
               value={invoice.clientCountry}
               onChange={(value) => handleChange('clientCountry', value)}
               pdfMode={pdfMode}
@@ -230,7 +228,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
           </View>
           <View className="w-45" pdfMode={pdfMode}>
             <View className="flex mb-5" pdfMode={pdfMode}>
-              <View className="w-40" pdfMode={pdfMode}>
+              <View className="w-55" pdfMode={pdfMode}>
                 <EditableInput
                   className="bold"
                   value={invoice.invoiceTitleLabel}
@@ -248,7 +246,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
               </View>
             </View>
             <View className="flex mb-5" pdfMode={pdfMode}>
-              <View className="w-40" pdfMode={pdfMode}>
+              <View className="w-55" pdfMode={pdfMode}>
                 <EditableInput
                   className="bold"
                   value={invoice.invoiceDateLabel}
@@ -271,7 +269,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
               </View>
             </View>
             <View className="flex mb-5" pdfMode={pdfMode}>
-              <View className="w-40" pdfMode={pdfMode}>
+              <View className="w-55" pdfMode={pdfMode}>
                 <EditableInput
                   className="bold"
                   value={invoice.invoiceDueDateLabel}
@@ -340,7 +338,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
                 <EditableTextarea
                   className="dark"
                   rows={2}
-                  placeholder="Enter item name/description"
+                  placeholder="സാധനം/സേവനത്തിന്റെ പേര്"
                   value={productLine.description}
                   onChange={(value) => handleProductLineChange(i, 'description', value)}
                   pdfMode={pdfMode}
@@ -386,7 +384,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
             {!pdfMode && (
               <button className="link" onClick={handleAdd}>
                 <span className="icon icon-add bg-green mr-10"></span>
-                Add Line Item
+                വരി ചേർക്കുക
               </button>
             )}
           </View>
