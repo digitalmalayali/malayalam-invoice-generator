@@ -2,7 +2,7 @@
   "name": "malayalam-invoice-generator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://digitalmalayali.github.io/malayalam-invoice-generator",
+  "homepage": "https://malayalam-invoice-generator.digitalmalayali.in",
   "dependencies": {
     "@react-pdf/renderer": "^2.0.18",
     "@testing-library/jest-dom": "^4.2.4",
