@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/malayalam-invoice-generator/precache-manifest.029104bf98f2eccdb51812eb89ef316b.js"
+  "/malayalam-invoice-generator/precache-manifest.e1c0d484e1c79801f33858e19ff09845.js"
 );
 
 self.addEventListener('message', (event) => {

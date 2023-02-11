@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/malayalam-invoice-generator/static/css/main.373e9005.chunk.css",
-    "main.js": "/malayalam-invoice-generator/static/js/main.ef307dc0.chunk.js",
-    "main.js.map": "/malayalam-invoice-generator/static/js/main.ef307dc0.chunk.js.map",
-    "runtime-main.js": "/malayalam-invoice-generator/static/js/runtime-main.0d9359dc.js",
-    "runtime-main.js.map": "/malayalam-invoice-generator/static/js/runtime-main.0d9359dc.js.map",
+    "main.js": "/malayalam-invoice-generator/static/js/main.9b805fba.chunk.js",
+    "main.js.map": "/malayalam-invoice-generator/static/js/main.9b805fba.chunk.js.map",
+    "runtime-main.js": "/malayalam-invoice-generator/static/js/runtime-main.6cab723c.js",
+    "runtime-main.js.map": "/malayalam-invoice-generator/static/js/runtime-main.6cab723c.js.map",
     "static/css/2.0d77bc6e.chunk.css": "/malayalam-invoice-generator/static/css/2.0d77bc6e.chunk.css",
-    "static/js/2.1edc723a.chunk.js": "/malayalam-invoice-generator/static/js/2.1edc723a.chunk.js",
-    "static/js/2.1edc723a.chunk.js.map": "/malayalam-invoice-generator/static/js/2.1edc723a.chunk.js.map",
+    "static/js/2.8a862eab.chunk.js": "/malayalam-invoice-generator/static/js/2.8a862eab.chunk.js",
+    "static/js/2.8a862eab.chunk.js.map": "/malayalam-invoice-generator/static/js/2.8a862eab.chunk.js.map",
     "index.html": "/malayalam-invoice-generator/index.html",
-    "precache-manifest.029104bf98f2eccdb51812eb89ef316b.js": "/malayalam-invoice-generator/precache-manifest.029104bf98f2eccdb51812eb89ef316b.js",
+    "precache-manifest.e1c0d484e1c79801f33858e19ff09845.js": "/malayalam-invoice-generator/precache-manifest.e1c0d484e1c79801f33858e19ff09845.js",
     "service-worker.js": "/malayalam-invoice-generator/service-worker.js",
     "static/css/2.0d77bc6e.chunk.css.map": "/malayalam-invoice-generator/static/css/2.0d77bc6e.chunk.css.map",
     "static/css/main.373e9005.chunk.css.map": "/malayalam-invoice-generator/static/css/main.373e9005.chunk.css.map",
-    "static/js/2.1edc723a.chunk.js.LICENSE.txt": "/malayalam-invoice-generator/static/js/2.1edc723a.chunk.js.LICENSE.txt",
+    "static/js/2.8a862eab.chunk.js.LICENSE.txt": "/malayalam-invoice-generator/static/js/2.8a862eab.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/malayalam-invoice-generator/static/media/resize.a7007355.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0d9359dc.js",
+    "static/js/runtime-main.6cab723c.js",
     "static/css/2.0d77bc6e.chunk.css",
-    "static/js/2.1edc723a.chunk.js",
+    "static/js/2.8a862eab.chunk.js",
     "static/css/main.373e9005.chunk.css",
-    "static/js/main.ef307dc0.chunk.js"
+    "static/js/main.9b805fba.chunk.js"
   ]
 }
