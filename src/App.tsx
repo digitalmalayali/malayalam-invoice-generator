@@ -18,7 +18,10 @@ function App() {
 
   return (
     <div className="app">
-      <h1 className="center fs-30">ബില്ലടിയന്ത്രം</h1>
+      <div className="appname">
+      <img src="logo192.png" alt="logo"/>
+      <h1 className="fs-30 persian-indigo">ബില്ലടിയന്ത്രം</h1>
+      </div>
       <InvoicePage data={data} onChange={onInvoiceUpdated} />
     </div>
   )

@@ -2,6 +2,10 @@
   color: $color-dark;
 }
 
+.persian-indigo {
+  color: $color-persian-indigo;
+}
+
 .white {
   color: $color-white;
 }
@@ -10,8 +14,8 @@
   background-color: $color-white;
 }
 
-.bg-dark {
-  background-color: $color-dark-2;
+.bg-blue {
+  background-color: $color-blue;
 }
 
 .bg-gray {
@@ -22,6 +26,14 @@
   background-color: $color-red;
 }
 
-.bg-green {
-  background-color: $color-green;
+.bg-persian-indigo {
+  background-color: $color-persian-indigo;
+}
+
+.bg-chartreuse {
+  background-color: $color-chartreuse;
+}
+
+.bg-light-green {
+  background-color: $color-light-green;
 }

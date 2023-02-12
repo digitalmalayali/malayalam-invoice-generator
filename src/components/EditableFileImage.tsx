@@ -109,7 +109,7 @@ const EditableFileImage: FC<Props> = ({ className, placeholder, value, width, on
             className="image__change"
             onClick={handleUpload}
           >
-            Change Image
+            ചിത്രം മാറ്റുക
           </button>
 
           <button
@@ -117,7 +117,7 @@ const EditableFileImage: FC<Props> = ({ className, placeholder, value, width, on
             className="image__edit"
             onClick={handleEdit}
           >
-            Resize Image
+            വലിപ്പം മാറ്റുക
           </button>
 
           <button
@@ -125,7 +125,7 @@ const EditableFileImage: FC<Props> = ({ className, placeholder, value, width, on
             className="image__remove"
             onClick={clearImage}
           >
-            Remove
+            നീക്കുക
           </button>
 
           {isEditing && (

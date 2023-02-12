@@ -3,6 +3,17 @@
   width: 700px;
 }
 
+.appname {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appname img {
+  margin-right: 20px;
+  width: 50px;
+}
+
 .input,
 .span,
 .select {
@@ -16,6 +27,7 @@
 
 .input,
 .select {
+
   &:hover,
   &:focus {
     background: $color-yellow;
@@ -26,6 +38,7 @@
   }
 
   &.white {
+
     &:hover,
     &:focus {
       color: inherit;
@@ -62,6 +75,17 @@
     height: 100%;
   }
 }
+
+@media only screen and (max-width:870px) {
+  .download-pdf {
+    position: fixed;
+    top: 30rem;
+    right: 2rem;
+    bottom: 2rem;
+    display: inline;
+  }
+}
+
 
 .image {
   position: relative;

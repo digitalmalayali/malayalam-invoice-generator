@@ -14,10 +14,10 @@ import Download from './DownloadPDF'
 import format from 'date-fns/format'
 
 Font.register({
-  family: 'Manjari',
+  family: 'Anek Malayalam',
   fonts: [
-    { src: 'https://smc.org.in/downloads/fonts/manjari/Manjari-Regular.ttf' },
-    { src: 'https://smc.org.in/downloads/fonts/manjari/Manjari-Bold.ttf', fontWeight: 600 },
+    { src: 'https://files.catbox.moe/jvqb0i.ttf' },
+    { src: 'https://files.catbox.moe/k9v42n.ttf', fontWeight: 600 },
   ],
 })
 
@@ -152,7 +152,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
             />
             <EditableInput
               className="fs-20 bold"
-              placeholder="കമ്പനി/സ്ഥാപനം"
+              placeholder="കമ്പനി"
               value={invoice.companyName}
               onChange={(value) => handleChange('companyName', value)}
               pdfMode={pdfMode}
@@ -176,7 +176,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
               pdfMode={pdfMode}
             />
             <EditableInput
-              placeholder="ഇന്ത്യ"
+              placeholder="സംസ്ഥാനം, രാജ്യം"
               value={invoice.companyCountry}
               onChange={(value) => handleChange('companyCountry', value)}
               pdfMode={pdfMode}
@@ -184,8 +184,8 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
           </View>
           <View className="w-50" pdfMode={pdfMode}>
             <EditableInput
-              className="fs-45 right bold"
-              placeholder="ബിൽ"
+              className="fs-30 right bold"
+              placeholder="ബില്ല്"
               value={invoice.title}
               onChange={(value) => handleChange('title', value)}
               pdfMode={pdfMode}
@@ -196,7 +196,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
         <View className="flex mt-40" pdfMode={pdfMode}>
           <View className="w-55" pdfMode={pdfMode}>
             <EditableInput
-              className="bold dark mb-5"
+              className="bold mb-5"
               value={invoice.billTo}
               onChange={(value) => handleChange('billTo', value)}
               pdfMode={pdfMode}
@@ -220,7 +220,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
               pdfMode={pdfMode}
             />
             <EditableInput
-              placeholder="ഇന്ത്യ"
+              placeholder="സംസ്ഥാനം, രാജ്യം"
               value={invoice.clientCountry}
               onChange={(value) => handleChange('clientCountry', value)}
               pdfMode={pdfMode}
@@ -228,7 +228,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
           </View>
           <View className="w-45" pdfMode={pdfMode}>
             <View className="flex mb-5" pdfMode={pdfMode}>
-              <View className="w-55" pdfMode={pdfMode}>
+              <View className="w-60" pdfMode={pdfMode}>
                 <EditableInput
                   className="bold"
                   value={invoice.invoiceTitleLabel}
@@ -238,7 +238,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
               </View>
               <View className="w-60" pdfMode={pdfMode}>
                 <EditableInput
-                  placeholder="INV-12"
+                  placeholder="5152"
                   value={invoice.invoiceTitle}
                   onChange={(value) => handleChange('invoiceTitle', value)}
                   pdfMode={pdfMode}
@@ -246,7 +246,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
               </View>
             </View>
             <View className="flex mb-5" pdfMode={pdfMode}>
-              <View className="w-55" pdfMode={pdfMode}>
+              <View className="w-60" pdfMode={pdfMode}>
                 <EditableInput
                   className="bold"
                   value={invoice.invoiceDateLabel}
@@ -269,7 +269,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
               </View>
             </View>
             <View className="flex mb-5" pdfMode={pdfMode}>
-              <View className="w-55" pdfMode={pdfMode}>
+              <View className="w-60" pdfMode={pdfMode}>
                 <EditableInput
                   className="bold"
                   value={invoice.invoiceDueDateLabel}
@@ -294,7 +294,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
           </View>
         </View>
 
-        <View className="mt-30 bg-dark flex" pdfMode={pdfMode}>
+        <View className="mt-30 bg-blue flex" pdfMode={pdfMode}>
           <View className="w-48 p-4-8" pdfMode={pdfMode}>
             <EditableInput
               className="white bold"
@@ -368,8 +368,8 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
               {!pdfMode && (
                 <button
                   className="link row__remove"
-                  aria-label="Remove Row"
-                  title="Remove Row"
+                  aria-label="വരി നീക്കുക"
+                  title="വരി നീക്കുക"
                   onClick={() => handleRemove(i)}
                 >
                   <span className="icon icon-remove bg-red"></span>
@@ -383,7 +383,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
           <View className="w-50 mt-10" pdfMode={pdfMode}>
             {!pdfMode && (
               <button className="link" onClick={handleAdd}>
-                <span className="icon icon-add bg-green mr-10"></span>
+                <span className="icon icon-add bg-persian-indigo mr-10"></span>
                 വരി ചേർക്കുക
               </button>
             )}
@@ -417,7 +417,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
                 </Text>
               </View>
             </View>
-            <View className="flex bg-gray p-5" pdfMode={pdfMode}>
+            <View className="flex bg-light-green p-5" pdfMode={pdfMode}>
               <View className="w-50 p-5" pdfMode={pdfMode}>
                 <EditableInput
                   className="bold"
@@ -447,12 +447,38 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
         <View className="mt-20" pdfMode={pdfMode}>
           <EditableInput
             className="bold w-100"
+            value={invoice.payLabel}
+            onChange={(value) => handleChange('payLabel', value)}
+            pdfMode={pdfMode}
+          />
+          <EditableTextarea
+            className="w-100"
+            placeholder="ബാങ്ക് അക്കൗണ്ട് വിവരങ്ങൾ, യു.പി.ഐ. ഐഡി..."
+            rows={2}
+            value={invoice.pay}
+            onChange={(value) => handleChange('pay', value)}
+            pdfMode={pdfMode}
+          />
+          <EditableFileImage
+            className="logo"
+            placeholder="UPI QR കോഡ്"
+            value={invoice.logo}
+            width={invoice.logoWidth}
+            pdfMode={pdfMode}
+            onChangeImage={(value) => handleChange('logo', value)}
+            onChangeWidth={(value) => handleChange('logoWidth', value)}
+          />
+          </View>
+          <View className="mt-20" pdfMode={pdfMode}>
+          <EditableInput
+            className="bold w-100"
             value={invoice.notesLabel}
             onChange={(value) => handleChange('notesLabel', value)}
             pdfMode={pdfMode}
           />
           <EditableTextarea
             className="w-100"
+            placeholder="നിങ്ങളുടെയൊപ്പം ബിസിനസ്സ് ചെയ്യാൻ സാധിച്ചതിൽ സന്തോഷം."
             rows={2}
             value={invoice.notes}
             onChange={(value) => handleChange('notes', value)}
@@ -468,6 +494,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
           />
           <EditableTextarea
             className="w-100"
+            placeholder="ദയവായി അവസാന തീയതിക്ക് മുമ്പായി പണമടയ്ക്കുമല്ലോ."
             rows={2}
             value={invoice.term}
             onChange={(value) => handleChange('term', value)}

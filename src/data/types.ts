@@ -46,6 +46,8 @@ export interface Invoice {
   notes: string
   termLabel: string
   term: string
+  payLabel: string
+  pay: string
 }
 
 export interface CSSClasses {

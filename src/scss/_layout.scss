@@ -49,6 +49,11 @@
 .row {
   position: relative;
   border-bottom: 1px solid $color-gray;
+  border-left: 1px solid $color-gray;
+}
+
+.view .w-48, .view .w-17, .view .w-18 {
+  border-right: 1px solid $color-gray;
 }
 
 .row__remove {

@@ -4,6 +4,9 @@ const colorDark = '#222'
 const colorDark2 = '#666'
 const colorGray = '#e3e3e3'
 const colorWhite = '#fff'
+const colorPersian = '#371982'
+const colorLightGreen = '#97f88a'
+const colorBlue = '#6c64e2'
 
 const styles: CSSClasses = {
   dark: {
@@ -18,8 +21,20 @@ const styles: CSSClasses = {
     backgroundColor: colorDark2,
   },
 
+  'bg-blue': {
+    backgroundColor: colorBlue,
+  },
+
   'bg-gray': {
     backgroundColor: colorGray,
+  },
+
+  'bg-persian-indigo': {
+    backgroundColor: colorPersian,
+  },
+
+  'bg-light-green': {
+    backgroundColor: colorLightGreen,
   },
 
   flex: {
@@ -63,18 +78,22 @@ const styles: CSSClasses = {
 
   'w-48': {
     width: '48%',
+    borderRight: `1px solid ${colorGray}`,
   },
 
   'w-17': {
     width: '17%',
+    borderRight: `1px solid ${colorGray}`,
   },
 
   'w-18': {
     width: '18%',
+    borderRight: `1px solid ${colorGray}`,
   },
 
   row: {
     borderBottom: `1px solid ${colorGray}`,
+    borderLeft: `1px solid ${colorGray}`,
   },
 
   'mt-40': {
@@ -121,12 +140,16 @@ const styles: CSSClasses = {
     fontSize: '20px',
   },
 
+  'fs-30': {
+    fontSize: '30px',
+  },
+
   'fs-45': {
     fontSize: '45px',
   },
 
   page: {
-    fontFamily: 'Manjari',
+    fontFamily: 'Anek Malayalam',
     fontSize: '13px',
     color: '#555',
     padding: '40px 35px',
