@@ -332,7 +332,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
               pdfMode={pdfMode}
             />
           </View>
-          <View className="w-18 p-4-8" pdfMode={pdfMode}>
+          <View className="w-17 p-4-8" pdfMode={pdfMode}>
             <EditableInput
               className="white bold right"
               value={invoice.productLineQuantityAmount}
@@ -340,7 +340,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
               pdfMode={pdfMode}
             />
           </View>
-          <View className="w-18 p-4-8" pdfMode={pdfMode}>
+          <View className="noborder w-17 p-4-8" pdfMode={pdfMode}>
             <EditableInput
               className="white bold right"
               value={invoice.productLineGST}
@@ -381,7 +381,7 @@ const InvoicePage: FC<Props> = ({ data, pdfMode, onChange }) => {
                   pdfMode={pdfMode}
                 />
               </View>
-              <View className="w-18 p-4-8 pb-10" pdfMode={pdfMode}>
+              <View className="w-17 p-4-8 pb-10" pdfMode={pdfMode}>
                 <Text className="dark right" pdfMode={pdfMode}>
                   {calculateAmount(productLine.quantity, productLine.rate)}
                 </Text>
