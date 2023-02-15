@@ -4,11 +4,14 @@ export interface ProductLine {
   description: string
   quantity: string
   rate: string
+  gst: string
 }
 
 export interface Invoice {
   logo: string
   logoWidth: number
+  // upi: string
+  // upiWidth: number
   title: string
   companyName: string
   name: string
@@ -23,7 +26,9 @@ export interface Invoice {
   clientCountry: string
 
   invoiceTitleLabel: string
+  invoiceGSTINLabel: string
   invoiceTitle: string
+  invoiceGSTIN: string
   invoiceDateLabel: string
   invoiceDate: string
   invoiceDueDateLabel: string
@@ -33,11 +38,13 @@ export interface Invoice {
   productLineQuantity: string
   productLineQuantityRate: string
   productLineQuantityAmount: string
+  productLineGST: string
 
   productLines: ProductLine[]
 
   subTotalLabel: string
-  taxLabel: string
+  sgstLabel: string
+  cgstLabel: string
 
   totalLabel: string
   currency: string
