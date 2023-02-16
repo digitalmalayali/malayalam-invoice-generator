@@ -15,12 +15,16 @@ export interface Invoice {
   title: string
   companyName: string
   name: string
+  phone: string
+  mail: string
   companyAddress: string
   companyAddress2: string
   companyCountry: string
 
   billTo: string
   clientName: string
+  clientPhone: string
+  clientMail: string
   clientAddress: string
   clientAddress2: string
   clientCountry: string
@@ -45,6 +49,7 @@ export interface Invoice {
   subTotalLabel: string
   sgstLabel: string
   cgstLabel: string
+  roundLabel: string
 
   totalLabel: string
   currency: string

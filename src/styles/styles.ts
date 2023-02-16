@@ -78,16 +78,17 @@ const styles: CSSClasses = {
 
   'w-48': {
     width: '48%',
-    borderRight: `1px solid ${colorGray}`,
   },
 
   'w-17': {
     width: '17%',
-    borderRight: `1px solid ${colorGray}`,
   },
 
   'w-18': {
     width: '18%',
+  },
+
+  'border': {
     borderRight: `1px solid ${colorGray}`,
   },
 
